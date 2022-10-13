@@ -1,0 +1,231 @@
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.item-on {
+    border: 4px solid var(--bs-red) !important;
+    padding: 0px !important;
+    background: #fff !important;
+    position: relative;
+}
+
+.item-on::before {
+    content: 'Előfeltétel';
+    position: absolute;
+    right: 0;
+    background: var(--bs-red);
+    color: white;
+    padding: 0 4px 2px 6px;
+    font-size: 14px;
+    border-radius: 0 0 0 6px;
+}
+
+.item-on.item-focus, .item-focus {
+    border: 4px solid var(--bs-green) !important;
+    box-shadow: 0px 0px 4px #666;
+    background: #ccc;
+}
+
+.item-on.item-focus::before {
+    display: none;
+}
+
+.subjectOuter {
+    padding: 2px;
+}
+
+.semWrapper {
+    display: grid;
+    grid-template-rows:    repeat(8, 350px);
+    grid-template-columns: repeat(6, 250px);
+    gap: 10px;
+    margin: 10px 40px;
+}
+
+.semDivider {
+    display: grid;
+    gap: 10px;
+}
+
+.subjectOuter {
+    border: 2px solid #ccc;
+    background: #eee;
+    display: block;
+    min-width: 240px;
+    max-width: 300px;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.subjectOuter:hover {
+    box-shadow: 0px 0px 3px #999;
+}
+
+.subjectInner {
+    padding: 5px;
+}
+
+.type-main {
+    border-color: #666;
+}
+
+.type-1 {
+    border-color: var(--bs-orange);
+}
+
+.type-2 {
+    border-color: var(--bs-blue);
+}
+
+.type-3 {
+    border-color: #ff693e;
+}
+
+.type-n {
+    border-color: #444;
+}
+
+
+.topic-main {
+    background: var(--material-color-blue-100);
+}
+
+.topic-1 {
+    background: var(--material-color-purple-100);
+}
+
+.topic-2 {
+    background: var(--material-color-teal-100);
+
+}
+
+.topic-3 {
+    background: var(--material-color-amber-100);
+}
+
+.topic-nth {
+    background: var(--material-color-orange-100);
+}
+
+.elective {
+    border-style: dashed;
+    color: #222;
+}
+
+.subjectSmall {
+
+}
+
+.subject-discontinued code {
+    color: #666;
+    font-style: italic;
+}
+
+.badgeContainer > * {
+    display: inline-block !important;
+    margin-right: 5px;
+}
+
+.limLength {
+    max-width: 190px;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.limLength:hover {
+    max-width: 200px;
+}
+
+.subjectName {
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 17px;
+    line-height: 1;
+}
+
+#dialogLike {
+    display: block;
+    position: fixed;
+    width: max(20%, 200px);
+    right: -40%;
+    top: 0;
+    bottom: 0;
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 3px #999;
+    transition: right .2s;
+}
+
+#dialogLike.dialog-open {
+    right: 0;
+}
+
+
+header {
+
+    height: 120px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background: #aaa;
+    color: white;
+    border-bottom: 1px solid #666666;
+    padding: 10px;
+    z-index: 99;
+}
+
+.margin-left-5 {
+    margin-left: 5px;
+}
+
+.moduleFixin.badge.rounded-pill.bg-warning {
+    color: black;
+}
+
+.cr--0 {
+}
+
+/*.cr--1 {min-height: 160px; max-height: 200px;}*/
+/*.cr--2 {min-height: 160px; max-height: 200px;}*/
+/*.cr--3 {min-height: 160px; max-height: 200px;}*/
+.cr--4 {
+    min-height: 165px;
+    max-height: 210px;
+}
+
+.cr--5 {
+    min-height: 172px;
+    max-height: 220px;
+}
+
+.cr--6 {
+    min-height: 185px;
+    max-height: 230px;
+}
+
+.item-thesis {
+    min-height: 195px;
+}
+
+.semesterHeader {
+    text-align: center;
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 18px;
+    border-radius: 6px;
+    background: #ddd;
+    padding: 6px 0px;
+}
