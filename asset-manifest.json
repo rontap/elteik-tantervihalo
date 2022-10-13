@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.923023ce.css",
-    "main.js": "/static/js/main.8b33099a.js",
-    "static/js/787.0c5e9af9.chunk.js": "/static/js/787.0c5e9af9.chunk.js",
-    "index.html": "/index.html",
-    "main.923023ce.css.map": "/static/css/main.923023ce.css.map",
-    "main.8b33099a.js.map": "/static/js/main.8b33099a.js.map",
-    "787.0c5e9af9.chunk.js.map": "/static/js/787.0c5e9af9.chunk.js.map"
+    "main.css": "/elteik-tantervihalo/static/css/main.923023ce.css",
+    "main.js": "/elteik-tantervihalo/static/js/main.7515499c.js",
+    "static/js/787.0c5e9af9.chunk.js": "/elteik-tantervihalo/static/js/787.0c5e9af9.chunk.js",
+    "index.html": "/elteik-tantervihalo/index.html",
+    "main.923023ce.css.map": "/elteik-tantervihalo/static/css/main.923023ce.css.map",
+    "main.7515499c.js.map": "/elteik-tantervihalo/static/js/main.7515499c.js.map",
+    "787.0c5e9af9.chunk.js.map": "/elteik-tantervihalo/static/js/787.0c5e9af9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.923023ce.css",
-    "static/js/main.8b33099a.js"
+    "static/js/main.7515499c.js"
   ]
 }
