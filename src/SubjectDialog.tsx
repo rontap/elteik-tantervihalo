@@ -12,7 +12,8 @@ export default function SubjectDialog({subject, openState, onClose}: any) {
 
     return <div id={"dialogLike"} className={open ? "dialog-open" : "dialog-closed"}>
         <div className={"subjectInner"}>
-            <h2>{subject.name}</h2>
+            <h3>{subject.name}</h3>
+            <br/>
             <table>
                 <tr>
                     <td>Kód</td>
@@ -24,9 +25,9 @@ export default function SubjectDialog({subject, openState, onClose}: any) {
                 </tr>
                 <tr>
                     <td>Értékelés</td>
-                    <td>
+                    <td>{" "}
                         {subject.assessment.combined && "Kombinált jegy "}
-                        |
+                        |{" "}
                         {subject.assessment.grade}
                     </td>
                 </tr>
@@ -37,10 +38,12 @@ export default function SubjectDialog({subject, openState, onClose}: any) {
                 </tr>
             </table>
 
-            {subject.elective ? "" : "Kötelező "} |
-            {subject.discontinued ? "Discontinued " : ""} |
-            {subject.topic} Ismeretkör
+            {subject.elective ? "" : <i>Kötelező </i>}
+            {subject.discontinued ? <>Discontinued</> : ""}
+            <br/>
+            {subject.topic ?? "Ismeretlen "} Ismeretkör
 
+            <hr/>
         </div>
         <form method="dialog">
             <Button variant="primary" onClick={() => {

@@ -160,13 +160,14 @@
     width: max(20%, 200px);
     right: -40%;
     top: 0;
-    bottom: 0;
+    min-height: 280px;
     background: white;
     margin: 20px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 2px 3px #999;
     transition: right .2s;
+    z-index:99;
 }
 
 #dialogLike.dialog-open {
@@ -176,12 +177,12 @@
 
 header {
 
-    height: 120px;
+    height: 100px;
     top: 0;
     left: 0;
     right: 0;
     position: fixed;
-    background: #aaa;
+    background: #666;
     color: white;
     border-bottom: 1px solid #666666;
     padding: 10px;
