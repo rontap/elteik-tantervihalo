@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/elteik-tantervihalo/static/css/main.923023ce.css",
-    "main.js": "/elteik-tantervihalo/static/js/main.7515499c.js",
+    "main.css": "/elteik-tantervihalo/static/css/main.186ca8ff.css",
+    "main.js": "/elteik-tantervihalo/static/js/main.a86b441f.js",
     "static/js/787.0c5e9af9.chunk.js": "/elteik-tantervihalo/static/js/787.0c5e9af9.chunk.js",
     "index.html": "/elteik-tantervihalo/index.html",
-    "main.923023ce.css.map": "/elteik-tantervihalo/static/css/main.923023ce.css.map",
-    "main.7515499c.js.map": "/elteik-tantervihalo/static/js/main.7515499c.js.map",
+    "main.186ca8ff.css.map": "/elteik-tantervihalo/static/css/main.186ca8ff.css.map",
+    "main.a86b441f.js.map": "/elteik-tantervihalo/static/js/main.a86b441f.js.map",
     "787.0c5e9af9.chunk.js.map": "/elteik-tantervihalo/static/js/787.0c5e9af9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.923023ce.css",
-    "static/js/main.7515499c.js"
+    "static/css/main.186ca8ff.css",
+    "static/js/main.a86b441f.js"
   ]
 }
