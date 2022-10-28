@@ -48,6 +48,7 @@ function App() {
         setOpenSubject(null);
         selectOpenSubject(null);
     }
+    const semesterNumberings = [1,2,3,4,5,6];
     console.log('openSubject', selectSubject);
     return (
         <div id={"AppCore"}>
@@ -60,7 +61,7 @@ function App() {
 
             <div className={"semWrapper"}>
                 {
-                    [1, 2, 3, 4, 5, 6].map(el =>
+                    semesterNumberings.map(el =>
                         <div className={"semDivider"}>
 
                             <SemesterHeader nth={el}/>
