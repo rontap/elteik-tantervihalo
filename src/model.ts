@@ -3,10 +3,18 @@ const _mod = require('./static/ELTE_PTI_BSC_2018c.json');
 
 const $ = document.querySelectorAll;
 
+enum Launch {
+    EVERY,
+    SPRING,
+    AUTUMN,
+    //TODO
+}
+
 interface Subject {
     module: string;
     code: string;
     name: string;
+    launch: Launch;
     discontinued?: boolean;
     credits: {
         "lecture": number | null,
@@ -25,6 +33,25 @@ interface Subject {
     topic: string;
     _renderedOnce?: boolean;
     _everyReq?: string[];
+
+}
+
+enum Status {
+    TAKEN,
+    WANTS,
+    COMPLETED,
+    MAYBE,
+    TODO,
+
+}
+
+type Semester = Number;
+type Grade = Number;
+
+interface UserSubject extends Subject {
+    status: Status,
+    takenAt: Semester?,
+    grade: Grade?,
 
 }
 
