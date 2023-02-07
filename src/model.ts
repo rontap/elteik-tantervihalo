@@ -29,7 +29,7 @@ interface Subject {
     };
     recommendedSemester: number[];
     requirements: []; // todo, also include strong/weak
-    optional: boolean;
+    elective: boolean;
     topic: string;
     _renderedOnce?: boolean;
     _everyReq?: string[];
