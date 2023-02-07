@@ -28,8 +28,8 @@ interface Subject {
         grade?: any
     };
     recommendedSemester: number[];
-    requirements: [];
-    elective: boolean;
+    requirements: []; // todo, also include strong/weak
+    optional: boolean;
     topic: string;
     _renderedOnce?: boolean;
     _everyReq?: string[];
@@ -37,12 +37,13 @@ interface Subject {
 }
 
 enum Status {
-    TAKEN,
-    WANTS,
-    COMPLETED,
-    MAYBE,
+    SKIPPING,
     TODO,
-
+    MAYBE,
+    WANTS,
+    TAKEN,
+    COMPLETED,
+    ACCEPTED,
 }
 
 type Semester = Number;
@@ -50,9 +51,8 @@ type Grade = Number;
 
 interface UserSubject extends Subject {
     status: Status,
-    takenAt: Semester?,
-    grade: Grade?,
-
+    takingAt?: Semester,
+    grade?: Grade,
 }
 
 class _Drawer {
